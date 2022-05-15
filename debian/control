@@ -1,0 +1,40 @@
+Source: platformdirs
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Stefano Rivera <stefanor@debian.org>
+Section: python
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ pybuild-plugin-pyproject,
+ python3-all,
+ python3-appdirs,
+ python3-hatch-vcs,
+ python3-hatchling,
+ python3-pytest,
+ python3-pytest-mock
+Rules-Requires-Root: no
+Standards-Version: 4.6.0
+Homepage: https://github.com/platformdirs/platformdirs
+Vcs-Browser: https://salsa.debian.org/python-team/packages/platformdirs
+Vcs-Git: https://salsa.debian.org/python-team/packages/platformdirs.git
+
+Package: python3-platformdirs
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: determining appropriate platform-specific directories (Python 3)
+ Depending on your system (Linux, Mac OS X, or Windows), you have to use
+ different directories for storing user data. platformdirs will help you choose
+ an appropriate:
+ .
+  * user data directory (user_data_dir function)
+  * user config directory (user_config_dir function)
+  * user cache directory (user_cache_dir function)
+  * site data directory (site_data_dir function)
+  * site config directory (site_config_dir function)
+  * user log directory (user_log_dir function)
+ .
+ On Linux systems, these function return directories based on the XDG Base
+ Directory Specification.
+ .
+ This is the Python 3 version of the package.

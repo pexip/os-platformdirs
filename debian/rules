@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=platformdirs
+
+%:
+	dh $@ --buildsystem=pybuild
+
+override_dh_installchangelogs:
+	dh_installchangelogs CHANGES.rst

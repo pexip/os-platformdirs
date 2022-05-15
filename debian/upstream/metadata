@@ -1,0 +1,10 @@
+---
+Bug-Database: https://github.com/platformdirs/platformdirs/issues
+Bug-Submit: https://github.com/platformdirs/platformdirs/issues/new
+Changelog: https://platformdirs.readthedocs.io/en/latest/changelog.html
+Documentation: https://platformdirs.readthedocs.io/en/latest/
+Registry:
+  - Name: PyPI
+    Entry: platformdirs
+Repository: https://github.com/platformdirs/platformdirs.git
+Repository-Browse: https://github.com/platformdirs/platformdirs

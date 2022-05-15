@@ -1,0 +1,7 @@
+Tests: python3
+Depends:
+ python3-all,
+ python3-appdirs,
+ python3-platformdirs,
+ python3-pytest,
+ python3-pytest-mock

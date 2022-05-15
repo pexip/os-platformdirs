@@ -1,0 +1,157 @@
+platformdirs (2.5.2-1) unstable; urgency=medium
+
+  * New upstream point release.
+  * Replace setuptools Build-Depends with hatchling and hatch-vcs.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 15 May 2022 18:42:44 -0400
+
+platformdirs (2.5.1-1) unstable; urgency=medium
+
+  * New upstream point release.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 23 Feb 2022 09:08:48 -0400
+
+platformdirs (2.5.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 13 Feb 2022 10:36:04 -0400
+
+platformdirs (2.4.1-1) unstable; urgency=medium
+
+  * New upstream point release.
+  * Build with pybuild's pyproject plugin.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 30 Dec 2021 08:47:27 -0400
+
+platformdirs (2.4.0-2) unstable; urgency=medium
+
+  * Build-Depend on python3-setuptools-scm and python3-toml, to inject the
+    version into the build. (Closes: #998405)
+  * Run tests and autopkgtests with pytest, following upstream's migration.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 07 Nov 2021 21:12:54 -0800
+
+platformdirs (2.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.6.0, no changes needed.
+  * Set upstream metadata for platformdirs.
+  * Update autopkgtest for upstream source tree reorg, and break it out into a
+    script.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 29 Oct 2021 15:30:03 -0700
+
+platformdirs (2.0.2-1) unstable; urgency=medium
+
+  [ Stefano Rivera]
+  * Initial version, friendly fork of appdirs (See: #991195)
+    - Without the pypy binary package.
+  * Build-Depend on python3-appdirs (test suite compares behaviour).
+  * Bump Standards-Version to 4.5.1, no changes needed.
+  * Bump watch format to 4, no changes needed.
+  * Replace --with python3, with dh-sequence-python3.
+  * Bump compat level to 13.
+
+  [ Ondřej Nový ]
+  * d/tests: Use AUTOPKGTEST_TMP instead of ADTTMP.
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 17 Jul 2021 09:50:44 -0400
+
+appdirs (1.4.4-1) unstable; urgency=medium
+
+  * Agreed maintainer change to DPMT.
+    - Set Debian Python Modules Team as maintainer
+    - Move Benjamin Drung to Uploaders
+    - Add myself to Uploaders
+    - Update Vcs-* for DPMT
+  * New upstream release
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 23 May 2020 00:32:18 -0400
+
+appdirs (1.4.3-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix autopkgtest to reliably run with multiple python3 versions installed
+    (Closes: #954222)
+
+ -- Scott Kitterman <scott@kitterman.com>  Wed, 25 Mar 2020 08:38:40 -0400
+
+appdirs (1.4.3-2) unstable; urgency=medium
+
+  * Move repository to salsa.debian.org
+  * Update my email address to @cloud.ionos.com
+  * Switch to debhelper 12
+  * Drop Python 2 support (Closes: #936127)
+  * Bump Standards-Version to 4.5.0 (no changes required)
+  * Split autopkgtest into separate tests for Python 3 and Pypy
+  * Drop ancient X-Python3-Version field
+  * Use https for debian/watch
+  * Check DEB_BUILD_OPTIONS in override_dh_auto_test
+  * Set Rules-Requires-Root: no
+
+ -- Benjamin Drung <benjamin.drung@cloud.ionos.com>  Wed, 26 Feb 2020 21:13:19 +0100
+
+appdirs (1.4.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Ship .pydist files for appdirs.
+  * Ignore egg-info for source package.
+  * Drop some unnecessary dependency versions.
+  * Bump Standards-Version to 4.0.0 (no changes)
+  * Use "Expat" short license name as this is preferred to "MIT".
+
+ -- Tristan Seligmann <mithrandi@debian.org>  Fri, 30 Jun 2017 02:24:10 +0200
+
+appdirs (1.4.0-3) unstable; urgency=medium
+
+  * Mention Eddy Petrișor in copyright file (Closes: #848313)
+  * Bump Standards-Version to 3.9.8 (no changes needed)
+  * Use https for copyright format specification
+  * Use secure HTTPS for git URIs
+
+ -- Benjamin Drung <benjamin.drung@profitbricks.com>  Fri, 23 Dec 2016 14:30:01 +0100
+
+appdirs (1.4.0-2) unstable; urgency=medium
+
+  * Build pypy-appdirs package.
+  * Add myself to Uploaders.
+  * Add autopkgtest support.
+
+ -- Tristan Seligmann <mithrandi@debian.org>  Wed, 02 Sep 2015 15:49:47 +0200
+
+appdirs (1.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Use pypi.debian.net redirector for debian/watch
+  * Bump Standards-Version to 3.9.6 (no changes required)
+  * Update Vcs-Browser to point to cgit URL
+
+ -- Benjamin Drung <benjamin.drung@profitbricks.com>  Mon, 03 Aug 2015 13:22:35 +0200
+
+appdirs (1.3.0-2) unstable; urgency=medium
+
+  * Remove appdirs-1.3.0.egg-info symlink on upgrade. (Closes: #747088)
+
+ -- Benjamin Drung <benjamin.drung@profitbricks.com>  Mon, 12 May 2014 11:54:33 +0200
+
+appdirs (1.3.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/rules: Add missing test/__init__.py for tests.
+
+ -- Benjamin Drung <benjamin.drung@profitbricks.com>  Thu, 24 Apr 2014 11:12:32 +0200
+
+appdirs (1.2.0+git20130326-1) unstable; urgency=low
+
+  * Initial version. (Closes: #737107)
+
+ -- Benjamin Drung <benjamin.drung@profitbricks.com>  Thu, 30 Jan 2014 12:21:00 +0100
