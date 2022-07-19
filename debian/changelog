@@ -1,6 +1,7 @@
 platformdirs (2.5.2-1pexip1) pexip-bullseye; urgency=medium
 
   * Prepare Pexip packaging
+  * Test suite disabled to avoid needing to backport pytest-mock.
 
  -- Mark Hymers <mark.hymers@pexip.com>  Tue, 19 Jul 2022 19:13:26 +0100
 

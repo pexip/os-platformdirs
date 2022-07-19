@@ -7,3 +7,6 @@ export PYBUILD_NAME=platformdirs
 
 override_dh_installchangelogs:
 	dh_installchangelogs CHANGES.rst
+
+override_dh_auto_test:
+	echo "Not testing to avoid needing pytest-mock backport"
