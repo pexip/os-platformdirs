@@ -1,3 +1,9 @@
+platformdirs (2.5.2-1pexip1) pexip-bullseye; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Tue, 19 Jul 2022 19:13:26 +0100
+
 platformdirs (2.5.2-1) unstable; urgency=medium
 
   * New upstream point release.
