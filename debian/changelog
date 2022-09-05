@@ -1,3 +1,9 @@
+platformdirs (2.5.2-1pexip2) pexip-bullseye; urgency=medium
+
+  * Bullseye rebuild for ARM64 inclusion
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Mon, 05 Sep 2022 10:35:00 +0100
+
 platformdirs (2.5.2-1pexip1) pexip-bullseye; urgency=medium
 
   * Prepare Pexip packaging
