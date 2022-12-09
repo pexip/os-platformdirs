@@ -1,12 +1,13 @@
 Metadata-Version: 2.1
 Name: platformdirs
-Version: 2.5.2
-Summary: A small Python module for determining appropriate platform-specific dirs, e.g. a "user data dir".
+Version: 2.6.0
+Summary: A small Python package for determining appropriate platform-specific dirs, e.g. a "user data dir".
 Project-URL: Documentation, https://platformdirs.readthedocs.io
 Project-URL: Homepage, https://github.com/platformdirs/platformdirs
 Project-URL: Source, https://github.com/platformdirs/platformdirs
 Project-URL: Tracker, https://github.com/platformdirs/platformdirs/issues
 Maintainer-email: Bernát Gábor <gaborjbernat@gmail.com>, Julian Berman <Julian@GrayVines.com>, Ofek Lev <oss@ofek.dev>, Ronny Pfannschmidt <opensource@ronnypfannschmidt.de>
+License-File: LICENSE
 Keywords: application,cache,directory,log,user
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
@@ -15,24 +16,25 @@ Classifier: Operating System :: OS Independent
 Classifier: Programming Language :: Python
 Classifier: Programming Language :: Python :: 3
 Classifier: Programming Language :: Python :: 3 :: Only
-Classifier: Programming Language :: Python :: 3.10
 Classifier: Programming Language :: Python :: 3.7
 Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
 Classifier: Programming Language :: Python :: Implementation :: CPython
 Classifier: Programming Language :: Python :: Implementation :: PyPy
 Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Requires-Python: >=3.7
 Provides-Extra: docs
-Requires-Dist: furo>=2021.7.5b38; extra == 'docs'
-Requires-Dist: proselint>=0.10.2; extra == 'docs'
-Requires-Dist: sphinx-autodoc-typehints>=1.12; extra == 'docs'
-Requires-Dist: sphinx>=4; extra == 'docs'
+Requires-Dist: furo>=2022.9.29; extra == 'docs'
+Requires-Dist: proselint>=0.13; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints>=1.19.4; extra == 'docs'
+Requires-Dist: sphinx>=5.3; extra == 'docs'
 Provides-Extra: test
 Requires-Dist: appdirs==1.4.4; extra == 'test'
-Requires-Dist: pytest-cov>=2.7; extra == 'test'
-Requires-Dist: pytest-mock>=3.6; extra == 'test'
-Requires-Dist: pytest>=6; extra == 'test'
+Requires-Dist: pytest-cov>=4; extra == 'test'
+Requires-Dist: pytest-mock>=3.10; extra == 'test'
+Requires-Dist: pytest>=7.2; extra == 'test'
 Description-Content-Type: text/x-rst
 
 The problem
@@ -68,7 +70,7 @@ On Linux (and other Unices), according to the `XDG Basedir Spec`_, it should be:
 ``platformdirs`` to the rescue
 ==============================
 
-This kind of thing is what the ``platformdirs`` module is for.
+This kind of thing is what the ``platformdirs`` package is for.
 ``platformdirs`` will help you choose an appropriate:
 
 - user data dir (``user_data_dir``)
@@ -82,7 +84,6 @@ This kind of thing is what the ``platformdirs`` module is for.
 
 And also:
 
-- Is a single module so other Python packages can vendor their own private copy.
 - Is slightly opinionated on the directory names used. Look for "OPINION" in
   documentation and code for when an opinion is being applied.
 

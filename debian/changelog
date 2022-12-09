@@ -1,3 +1,23 @@
+platformdirs (2.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 09 Dec 2022 17:46:57 -0400
+
+platformdirs (2.5.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update copyright file.
+
+ -- Stefano Rivera <stefanor@debian.org>  Thu, 10 Nov 2022 12:23:56 +0200
+
+platformdirs (2.5.2-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.6.1, no changes needed.
+  * Support the nocheck build profile.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sat, 15 Oct 2022 22:08:38 +0200
+
 platformdirs (2.5.2-1) unstable; urgency=medium
 
   * New upstream point release.
